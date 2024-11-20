@@ -11,10 +11,10 @@ repositories {
 // end::repositories[]
 
 // tag::jar[]
-//jar {
-//    archiveBaseName = 'gs-gradle'
-//    archiveVersion =  '0.1.0'
-//}
+jar {
+    archiveBaseName = 'gs-gradle'
+    archiveVersion =  '0.1.0'
+}
 // end::jar[]
 
 // tag::dependencies[]
@@ -49,7 +49,7 @@ buildscript {
     }
     dependencies {
         //Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
-        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:8+"
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4+"
     }
 }
 
