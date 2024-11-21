@@ -33,7 +33,7 @@ dependencies {
 
 publishing {
     publications {
-        jar(MavenPublication) {
+        maven(MavenPublication) {
             groupId 'pramshy'
             artifactId 'gs-gradle'
             version '1.0'
@@ -62,7 +62,7 @@ artifactory {
     publish {
         repository {
             repoKey = 'gradle-dev-local'
-            maven = true
+            // maven = true
         }
         defaults {
             publications('jar')
@@ -73,7 +73,7 @@ artifactory {
     resolve {
         repository {
             repoKey = 'gradle-dev'
-            maven = true
+            //maven = true
 
         }
     }
